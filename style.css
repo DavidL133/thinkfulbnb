@@ -1,0 +1,164 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100%;
+  flex-shrink: 1;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  font-family: Montserrat;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    font-size: 42px;
+    margin: 14px 0;
+    padding-top: 6px;
+  }
+
+  header nav {
+    margin-top: 14px;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+}
+
+
+/* -------  Search Form ------- */
+ .group{
+  display: flex;
+  flex-direction: row;
+}
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+ 
+  
+}
+form * {
+  box-sizing: border-box;
+}
+
+form label {
+  font-weight: bold;
+  width: 30%;
+  display: inline-block;
+}
+
+form select,
+form input {
+  margin-bottom: 10px;
+  width: 69%;
+  display: inline-block;
+
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
